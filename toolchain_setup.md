@@ -1,4 +1,4 @@
-# Setup guide for installing R, RStudio, and GitHub
+# Setup guide for IAG toolchain
 
 ## Install R
 
