@@ -9,9 +9,9 @@
 ## Install RStudio
 
 1. Open http://www.rstudio.com/products/rstudio/download/
-2. Download the Windows XP installer
-3. Run the installer
-
+2. Download the Zip/Tarballs archive for Windows XP (you can't run the installer without admin rights to your computer)
+3. Right-click on the downloaded archive,  select "Extract all...", and extract the contents to an RStudio folder in your My Documents folder
+4. Create a shortcut to the bin/rstudio.exe file by right-clicking on the file and choosing "Send to > Desktop"
 	
 ## Install git
 
