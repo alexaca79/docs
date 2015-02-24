@@ -5,7 +5,6 @@
 1. Open http://cran.rstudio.com/ , click the "Download R for Windows" link and then the "base" link
 2. Download the R for Windows installer
 3. Run the installer
-4. 
 
 ## Install Rtools
 
