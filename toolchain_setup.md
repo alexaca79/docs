@@ -42,7 +42,7 @@
 2. Ask @mroutley to add you to the [IAG team](https://github.com/InfrastructureAnalytics) on GitHub
 3. Create an [access token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 	
-## Configure R
+## Configure RStudio
 
 Save .Rprofile to ~/Documents containing:
 
@@ -53,6 +53,12 @@ Sys.setenv(GITHUB_PAT = "######")
 ```
 
 This sets RStudio to use the proxy server and your GitHub credentials.
+
+Now open the Global Options list in RStudio and select the Git/SVN tab. For the Git executable, browse to: 
+
+    C:\Users\USERNAME\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe
+    
+where `USERNAME` is your windows username.
 
 ## Optional - Install Swirl
 
