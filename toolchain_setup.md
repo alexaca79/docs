@@ -10,10 +10,38 @@
 
 1. Open http://cran.r-project.org/bin/windows/Rtools/
 2. Download and install the most recent Rtools
+3. Use **find_rtools()** in RStudio to test that the download worked
+
+If rTools is not found:
+
+4. Use the following code (This code assumes the rTools folder is saved to the C:/ drive)
+```r
+library(devtools)
+add_path("C:\\Rtools\\bin", after = 1)
+add_path("C:\\Rtools\\gcc-4.6.3\\bin", after = 2)
+```
+
+If this fixes the code, but the problem presents itself everytime you reset RStudio:
+
+5. Add the above code to **.RProfile**
+6. (Optional) To test for rTools each time you open RStudio, add the code below
+```r
+print("rTools found?")
+find_rtools()
+```
+
 
 ## Install RStudio
 
 1. Open http://www.rstudio.com/products/rstudio/download/
+
+If you **have** admin rights:
+
+2. Download the Installer for Windows XP
+3. Run the installer
+
+If you **do not have** admin rights:
+
 2. Download the Zip/Tarballs archive for Windows XP (you can't run the installer without admin rights to your computer)
 3. Right-click on the downloaded archive,  select "Extract all...", and extract the contents to an RStudio folder in your My Documents folder
 4. Create a shortcut to the bin/rstudio.exe file by right-clicking on the file and choosing "Send to > Desktop"
