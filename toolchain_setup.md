@@ -24,12 +24,20 @@ If you **do not have** admin rights:
 ## Install devtools & Rtools
 
 ### devtools
-1. In the command line type `install.packages("devtools")`
-2. The devtools package can now be found in the **Packages** tab (bottom left of screen)
-3. To import the package to be used you can either check the devtools checkbox or type `library(devtools)` in the command line
+1. If you installed RStudio using admin rights, then you will need to take the following steps:
+    + Navigate to `C:\Program Files\R\`
+    + Right click on `R-3.2.3` (or whatever version of RStudio you are using)
+    + Choose "Properties"
+    + Go to "Security" tab
+    + Click "Edit"
+    + Select "User" and check the box that says "Full Control"
+    + Click "OK"
+2. In the command line type `install.packages("devtools")`
+3. The devtools package can now be found in the **Packages** tab (bottom left of screen)
+4. To import the package to be used you can either check the devtools checkbox or type `library(devtools)` in the command line
 
 ### rTools
-1. Open http://cran.r-project.org/bin/windows/Rtools/
+1. Open `http://cran.r-project.org/bin/windows/Rtools/`
 2. Download and install the most recent Rtools
 3. Use `devtools::find_rtools()` in RStudio to test that the download worked
 
@@ -93,7 +101,8 @@ Sys.setenv(GITHUB_PAT = "######")
 2. In RStudio, use the Tools dropdown to open the Global Options
 3. Select the Git/SVN tab
 4. For the Git executable: 
-    + browse to `C:\Users\USERNAME\AppData\Local\GitHub\`
+    + browse to `C:\Users\USERNAME\`
+    + You will need to show hidden files, then click into `AppData\Local\GitHub\`
     + click into `PortableGit_xxxxx` (where xxxxx is a random set of characters)
     + if you are on a **32-bit** machine, click into `mingw32`
     + click into `bin`
